@@ -13,7 +13,7 @@ header.header button {
     border-radius: 10px;
     border: 1px solid black;
     font-family: SF UI Display;
-    font-size: 25px;
+    font-size: 20px;
     background: #fff;
     cursor: pointer;
     transition: background .4s,
@@ -24,6 +24,6 @@ header.header button:hover {
     color: white;
 }
 header.header button:active {
-    background: #e7e7e7;
+    background: rgb(48, 239, 48);
     color: black;
 }
