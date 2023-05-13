@@ -23,11 +23,38 @@
         <h1>Add Student</h1>
         <br><br>
 
-        <label for="name">Name</label>
+        <p class="fwrap">
+        <label for="name">Name:</label>&nbsp;<sup class="red bold">*</sup>
         <br>
-        <input type="text" name="name" id="fullname">
+        <input type="text" name="name" id="fullname" placeholder="Full Name..">
+        </p>
 
-        <label for="id"></label>
+        <p class="fwrap">
+        <label for="rn">
+            <span class="red">(Old)</span> 
+            Receipt number:
+        </label>
+        <br>
+        <input type="text" id="rn" placeholder="Old receipt number..">
+        </p>
+
+        <p class="fwrap">
+        <label for="id">Identity Card (ID/IC) number: <sup class="red bold">*</sup></label><br>
+        <input type="text" name="id" id="id" placeholder="Identity Card no...">
+        </p>
+
+        
+            <label for="phone">Phone Numbers:</label>
+            <p>
+                <input type="text" class="phone" id="p1" placeholder="Phone number.."> <sup class="red bold">*</sup>
+            </p>
+            <p>
+                <input type="text" class="phone" id="p2" placeholder="Phone number..">
+            </p>
+            <p>
+                <input type="text" class="phone" id="p3" placeholder="Phone number..">
+            </p>
+        
     </div>
 </body>
 </html>

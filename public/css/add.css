@@ -5,8 +5,48 @@
     padding-left: 20px;
 }
 label {
-    font-size: 25px;
+    font-size: 22px;
 }
 input {
+    border-radius: 10px;
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
     font-size: 25px;
+    font-family: SF UI Display;
+}
+input.phone {
+    font-size: 25px;
+    padding: 5px;
+}
+#p1 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid black;
+    border-bottom: none;
+}
+#p2 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid black;
+    border-top: 1px dashed black;
+    border-bottom: none;
+}
+#p3 {
+    border: 1px solid black;
+    border-top: 1px dashed black;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.red {
+    color:red
+}
+.bold{
+    font-weight:bold
+}
+.fwrap {
+    margin-bottom: 10px;
 }
