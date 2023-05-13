@@ -21,7 +21,7 @@
     </header>
     <div class="cont">
         <h1>Add Student</h1>
-        <br><br>
+        <br>
 
         <p class="fwrap">
         <label for="name">Name:</label>&nbsp;<sup class="red bold">*</sup>
@@ -54,14 +54,35 @@
             <p>
                 <input type="text" class="phone" id="p3" placeholder="Phone number..">
             </p>
-            <p>
+            <p class="fwrap">
                 <label for="rd">
-                    <div class="red">(Old)</div> Registration Date:
+                    <span class="red">(Old)</span> Registration Date:
                 </label>
-                <input type="date" name="" id="rd" placeholder="Email..">
+                <br>
+                <input type="date" name="" id="rd">
             </p>
-
-
+            <p class="fwrap">
+                <label for="email">Email:</label>
+                <br>
+                <input type="text" placeholder="E-mail.." id="email">
+            </p>
+            <p class="fwrap">
+                <label for="bd">Date of Birth: <sup class="red bold">*</sup></label>
+                <br>
+                <input type="date" id="bd">
+            </p>
+            <p class="fwrap">
+                <label for="cls">Grade:</label>
+                <br>
+                <select name="" id="cls">
+                    <option value="1">First Grade</option>
+                    <option value="2">Secound Grade</option>
+                    <option value="3">Third Grade</option>
+                    <option value="4">Fourth Grade</option>
+                    <option value="5">Fifth Grade</option>
+                    <option value="6">Sixth Grade</option>
+                </select>
+            </p>
     </div>
 </body>
 </html>
