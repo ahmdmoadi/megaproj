@@ -70,6 +70,10 @@ app.post('/add', (req, res) => {
   });
 });
 
+app.post('/list', (req, res)=>{
+  // idk
+});
+
 function hasSqlInjection(data) {
   const sqlRegex = /(--)|(\/\*)|(SELECT|DELETE|UPDATE|INSERT|DROP|TRUNCATE)|(\bUNION\b)|\.sh?e?l?l?/gi;
   return Object.values(data).some(value => sqlRegex.test(value));
