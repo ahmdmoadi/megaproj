@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP | Student Added!</title>
+    <link rel="stylesheet" href="css/sfui.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="fa/css/fontawesome.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <link rel="stylesheet" href="fa/css/solid.css">
+    <link rel="stylesheet" href="css/added.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><button>
+            <i class="fa fas fa-graduation-cap"></i>&nbsp;MegaProj
+        </button></a>
+
+        <a href="index.html"><button>
+            <span><i class="fa fas fa-home"></i></span> 
+            Back to home
+        </button></a>
+    </header>
+    <div class="cont">
+        <h1>Student Added Successfully!</h1>
+        <p id="show"></p>
+        <p id="data_show"></p>
+    </div>
+
+    <script>
+        let url = new URL(location.href);
+        let data_show = document.querySelector("#data_show")
+
+        // show.innerText = url.href;
+
+        // get index
+        let index = url.searchParams.get("i");
+
+        // if index=null
+        // (no i param)
+        // then redir to
+        // i=0
+        if(!index) {
+            url.searchParams.set("i","0");
+            location.href = url.href;
+        }
+
+        let data = localStorage.getItem("mp_data");
+
+        if(!data) {
+            data_show.innerHTML="ERROR: no previous student record found in CACHE!<br>How did you get here?<br><a href='index.html'>Go Back</a>"
+        } else {
+            data=data.replace(/null/gi,"-")
+            data = JSON.parse(data);
+            // data_show.innerHTML=JSON.stringify(data);
+            let table = document.createElement("table");
+            data_show.appendChild(table);
+            let entries = Object.entries(data);
+            entries.forEach(entry=>{
+                let tr = document.createElement("tr");
+                table.appendChild(tr);
+                entry.forEach(cell=>{
+                    let td = document.createElement("td");
+                    tr.appendChild(td);
+                    td.innerHTML=cell;
+                })
+            });
+        }
+    </script>
+</body>
+</html>

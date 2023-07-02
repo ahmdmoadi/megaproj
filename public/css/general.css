@@ -6,9 +6,13 @@
 }
 header.header {
     border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+header.header a {
+    margin: 20px;
 }
 header.header button {
-    margin: 20px;
     padding: 15px;
     border-radius: 10px;
     border: 1px solid black;
@@ -26,4 +30,7 @@ header.header button:hover {
 header.header button:active {
     background: rgb(48, 239, 48);
     color: black;
+}
+.cont {
+    font-family: SF UI Display;
 }

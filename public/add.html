@@ -10,16 +10,21 @@
     <link rel="stylesheet" href="fa/css/all.css">
     <link rel="stylesheet" href="fa/css/solid.css">
     <link rel="stylesheet" href="css/add.css">
-    <title>Document</title>
+    <title>MP | Add</title>
 </head>
 <body>
     <header class="header">
-        <a href="#"></a><button>
+        <a href="index.html"><button>
+            <i class="fa fas fa-graduation-cap"></i>&nbsp;MegaProj
+        </button></a>
+
+        <a href="index.html"><button>
             <span><i class="fa fas fa-home"></i></span> 
             Back to home
         </button></a>
     </header>
     <div class="cont">
+        <button id="fill" title="only a devloper should see this!" style="display: none;">Fill_Form</button>
         <h1>Add Student</h1>
         <br>
 
@@ -44,7 +49,8 @@
         </p>
 
         
-            <label for="phone">Phone Numbers:</label>
+            <p class="fwrap">
+                <label for="phone">Phone Numbers:</label>
             <p>
                 <input type="text" class="phone" id="p1" placeholder="Phone number.."> <sup class="red bold">*</sup>
             </p>
@@ -53,6 +59,7 @@
             </p>
             <p>
                 <input type="text" class="phone" id="p3" placeholder="Phone number..">
+            </p>
             </p>
             <p class="fwrap">
                 <label for="rd">
@@ -76,7 +83,7 @@
                 <br>
                 <select name="" id="cls">
                     <option value="1">First Grade</option>
-                    <option value="2">Secound Grade</option>
+                    <option value="2">Second Grade</option>
                     <option value="3">Third Grade</option>
                     <option value="4">Fourth Grade</option>
                     <option value="5">Fifth Grade</option>
@@ -94,6 +101,21 @@
                     <option value="6">Class 6</option>
                 </select>
             </p>
+            <p class="fwrap">
+                <label for="total">Total Fees:&nbsp;<sup class="red bold">*</sup></label><br>
+                <input type="text" id="total" placeholder="total fees">
+            </p>
+            <p class="fwrap">
+                <label for="cashin"><span class="red">(Old)</span> Cash In:</label><br>
+                <input type="text" id="cashin" placeholder="cash received">
+            </p>
+            <p class="fwrap">
+                <label for="notes">Notes:</label><br>
+                <textarea name="notes" id="notes" cols="30" rows="10" placeholder="Special Notes: (Medical Conditions etc.)"></textarea>
+            </p>
+            <button id="add">Add</button>
     </div>
+
+    <script src="js/add.js"></script>
 </body>
 </html>

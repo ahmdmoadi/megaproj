@@ -1,0 +1,110 @@
+#btn {
+    padding: 5px 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: SF UI Display;
+    border: 1px solid black;
+    background: #fff;
+    transition: filter .25s,transform .25s, color .25s;
+    cursor: pointer;
+}
+#btncont {
+    /* background: #000; */
+    display: block;
+    text-align: center;
+}
+#btn:hover {
+    filter: invert(1);
+    transform: scale(1.125);
+}
+#btn:active {
+    color: lightgray;
+    transform: scale(1);
+}
+.cont {
+    margin: 20px;
+}
+h1 {
+    padding-bottom: 20px;
+}
+input[type=number] {
+    width: 5ch;
+}
+table:first-child tr td:first-child{
+    padding-right: 10px;
+}
+#results {
+    border: 1px solid black;
+}
+#results td {
+    border: 1px solid black;
+}
+ul#ctxmenu {
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+ul#ctxmenu li {
+    padding: 6px 10px;
+    font-family: SF UI Display;
+}
+ul#ctxmenu li::selection {
+    background: transparent;
+}
+ul#ctxmenu li:nth-child(2n) {
+    background: beige;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+ul#ctxmenu li:nth-child(2n):hover {
+    background: rgb(235, 235, 209);
+}
+ul#ctxmenu li:nth-child(2n):active{
+    color: rgb(235, 235, 209);
+}
+ul#ctxmenu li:nth-child(2n+1) {
+    background: rgb(255, 253, 154);
+}
+ul#ctxmenu li:nth-child(2n+1):hover {
+    background: rgb(245, 243, 144);
+}
+ul#ctxmenu li:nth-child(2n+1):active {
+    color: rgb(245, 243, 144);
+}
+#rpp, #page_current {
+    padding: 5px;
+    font-family: SF UI Display;
+    font-size: 20px;
+    width: 3ch;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.control_texts {
+    font-size: 25px;
+}
+#searchform {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.search_inputs {
+    font-size: 25px;
+    padding: 5px;
+    width: 17ch;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#until_fetched {
+    display: none;
+}
+#searchform tr td:first-child {
+    padding-right: 10px;
+}
+.sfwrap {
+    border-left: 5px solid black;
+    padding-left: 15px;
+}

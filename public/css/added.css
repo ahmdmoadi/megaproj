@@ -1,0 +1,19 @@
+.cont {
+    padding: 20px;
+}
+h1{
+    padding-bottom: 20px;
+}
+table{
+    border: 1px solid black;
+}
+table tr:nth-child(2n){
+    background: gray;
+}
+table tr:nth-child(2n+1){
+    background: lightgray;
+}
+table td{
+    font-family: SF UI Display;
+    font-size: 25px;
+}
